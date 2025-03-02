@@ -1,9 +1,9 @@
 import pandas as pd
 
-big_mac_file = './big-mac-full-index.csv'
+# big_mac_file = './big-mac-full-index.csv'
 
 
-df = pd.read_csv(big_mac_file)
+df = pd.read_csv('./big-mac-full-index.csv')
 
 
 def get_big_mac_price_by_year(year, country_code):
@@ -59,7 +59,8 @@ def get_the_most_expensive_big_mac_price_by_year(year):
 
 
 if __name__ == "__main__":
-    print(get_big_mac_price_by_year(2008, 'usa'))  
+    print(get_big_mac_price_by_year(2000, 'Usa'))  
+    print(get_big_mac_price_by_year(2000, 'MEX'))  
     print(get_big_mac_price_by_country('chn'))   
     print(get_the_cheapest_big_mac_price_by_year(2008)) 
     print(get_the_most_expensive_big_mac_price_by_year(2003)) 
