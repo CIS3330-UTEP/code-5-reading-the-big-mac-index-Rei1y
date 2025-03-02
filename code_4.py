@@ -11,7 +11,7 @@ def get_big_mac_price_by_year(year, country_code):
             total_price += row['dollar_price']
             count += 1
     if count > 0:
-        return f"${round(total_price / count, 2)}"
+        return round(total_price / count, 2)
     else:
         return None
 
@@ -24,7 +24,7 @@ def get_big_mac_price_by_country(country_code):
             total_price += row['dollar_price']
             count += 1
     if count > 0:
-        return f"${round(total_price / count, 2)}"
+        return round(total_price / count, 2)
     else:
         return None
 
