@@ -2,10 +2,10 @@ import pandas as pd
 
 big_mac_file = './big-mac-full-index.csv'
 
-# Load the CSV file into a DataFrame
+
 df = pd.read_csv(big_mac_file)
 
-# Function to get the mean Big Mac price by year and country code
+
 def get_big_mac_price_by_year(year, country_code):
     total_price = 0
     count = 0
@@ -18,7 +18,7 @@ def get_big_mac_price_by_year(year, country_code):
     else:
         return None
 
-# Function to get the mean Big Mac price by country code
+
 def get_big_mac_price_by_country(country_code):
     total_price = 0
     count = 0
@@ -31,7 +31,7 @@ def get_big_mac_price_by_country(country_code):
     else:
         return None
 
-# Function to get the cheapest Big Mac price by year
+
 def get_the_cheapest_big_mac_price_by_year(year):
     min_price = float('inf')
     min_country = None
@@ -44,7 +44,7 @@ def get_the_cheapest_big_mac_price_by_year(year):
     else:
         return None
 
-# Function to get the most expensive Big Mac price by year
+
 def get_the_most_expensive_big_mac_price_by_year(year):
     max_price = float('-inf')
     max_country = None
@@ -57,10 +57,10 @@ def get_the_most_expensive_big_mac_price_by_year(year):
     else:
         return None
 
-# Basic interface as per assignment instructions
+
 if __name__ == "__main__":
-    # Example calls for testing with different countries and years
-    print(get_big_mac_price_by_year(2008, 'usa'))          # Should work for any valid year and country
-    print(get_big_mac_price_by_country('chn'))              # Should work for any valid country code
-    print(get_the_cheapest_big_mac_price_by_year(2008))     # Should find the cheapest for any year
-    print(get_the_most_expensive_big_mac_price_by_year(2003)) # Should find the most expensive for any year
+    print(get_big_mac_price_by_year(2008, 'usa'))  
+    print(get_big_mac_price_by_country('chn'))   
+    print(get_the_cheapest_big_mac_price_by_year(2008)) 
+    print(get_the_most_expensive_big_mac_price_by_year(2003)) 
+    #Is GitHub working?
